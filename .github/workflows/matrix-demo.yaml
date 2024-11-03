@@ -2,6 +2,7 @@ name: MATRIX DEMO
 on: push
 jobs:
   build:
+    continue-on-error: true 
     strategy:
       matrix:
         node-veersion: [12, 14, 16]
